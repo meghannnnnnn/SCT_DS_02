@@ -41,6 +41,29 @@ Performed data cleaning and exploratory data analysis (EDA) on a Titanic dataset
      and 'Senior'). These groups are created using pd.cut() based on age ranges.
    - Finally, the code displays histograms for the cleaned 'Age' and 'Fare' distributions using hist().
    - It also uses sns.countplot() to visualize the distribution of 'Sex' and 'Embarked'.
+  
+# 🔴Key Features Used in the Code
+Data Loading and Inspection:
+ * read_csv: Reads a CSV file into a DataFrame.
+ * .head(): Shows the first few rows.
+ * .tail(): Shows the last few rows.
+ * .info(): Provides information about the data.
+ * .columns: Lists the column names.
+ * .describe(): Shows summary statistics.
+   
+Data Cleaning:
+ * .dropna(): Removes rows with missing values.
+ * .fillna(): Fills missing values.
+ * factorize(): Converts categorical data to numerical.
+ * .interpolate(): Fills missing values using interpolation.
+ * Creating new columns: Combines existing columns to create new ones (e.g., 'FamilySize').
+ * Dropping columns: Removes unnecessary columns.
+   
+Data Exploration:
+ * .boxplot(): Creates box plots to compare distributions.
+ * .countplot(): Creates count plots to visualize frequencies.
+ * .barplot(): Creates bar plots to show relationships.
+ * .hist(): Creates histograms to visualize distributions.
 
 *Note:* This script is a basic example of data analysis using Google Colab. You can further explore the data by creating additional features, performing machine learning tasks to predict survival, and fine-tuning the analysis based on your specific interests.
 
